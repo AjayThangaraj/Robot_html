@@ -1,0 +1,246 @@
+*{
+    /* background-color:black; */
+}
+
+#main{
+    border:2px solid black;
+    background-color:black;
+    height:370px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+     align-items:center;
+     justify-content: center;
+
+}
+
+#main1{
+    /* border:2px solid black; */
+    height: 120px;
+    width: 240px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    margin-bottom: 5px
+    
+}
+
+.face{
+    /* border:2px solid black; */
+    background-color: green;
+    height: 80px;
+    width: 50%;
+    margin-bottom: 1px;
+    display: flex;
+    align-items:center;
+    border-radius:110px 110px 0px 0px ;
+}
+
+.eye1{
+    background-color: black;
+    height: 5px;
+    width:5%;
+    border-radius:80px 80px 80px 80px;
+    margin-left: 15px;
+    margin-top: 20px;
+} 
+.eye2{
+    background-color: black;
+    height: 5px;
+    width:5%;
+    border-radius:80px 80px 80px 80px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+#main2{
+    /* border:2px solid black; */
+    height: 110px;
+    width:240px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+
+}
+
+.left{
+    /* border:2px solid black; */
+    background-color: green;
+    height: 100px;
+    width: 20px;
+    border-radius: 80px 80px 80px 80px;
+    margin-bottom:6%;
+    margin-left: 8%;
+}
+
+.body{
+    /* border:2px solid black; */
+    background-color: green;
+    height:130px;
+    width:50%;
+    border-radius: 0px 0px 20px 20px;
+    
+    
+}
+
+.right{
+    /* border:2px solid black; */
+    background-color: green;
+    height: 100px;
+    width: 20px;
+    border-radius: 80px 80px 80px 80px;
+    margin-bottom: 6%;
+    margin-right: 8%;
+}
+
+#main3{
+    /* border: 2px solid black; */
+    height: 100px;
+    width:20%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.leg1{
+    /* border:2px solid black; */
+    background-color: green;
+    height: 100px;
+    width: 20%;
+    border-radius: 80px 80px 80px 80px;    
+}
+
+.leg2{
+    /* border:2px solid black; */
+    background-color: green;
+    height: 100px;
+    width: 20%;
+    border-radius: 80px 80px 80px 80px;
+}
+
+
+  /* head */
+
+  #main:hover .body{
+    animation: b1 2s infinite linear;
+  }
+  @keyframes b1{
+    0%{
+        transform: rotate(0deg);
+        border-radius:30px;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-radius:30px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius:30px;
+    }
+  }
+  #main:hover .right{
+    animation: h1 2s infinite linear;
+}
+@keyframes h1{
+  0%{
+      transform: rotate(-90deg);
+      transform-origin: top center;
+  }
+  25%{
+      transform: rotate(0deg);
+      transform-origin: top center;
+  }
+  50%{
+      transform: rotate(-90deg);
+      transform-origin: top center;
+  }
+  75%{
+    transform: rotate(0deg);
+    transform-origin: top center;
+}
+100%{
+    transform: rotate(-90deg);
+    transform-origin: top center;
+}
+}
+#main:hover .left{
+    animation: h2 2s infinite linear;
+}
+@keyframes h2{
+  0%{
+      transform: rotate(90deg);
+      transform-origin: top center;
+  }
+  25%{
+      transform: rotate(0deg);
+      transform-origin: top center;
+  }
+  50%{
+      transform: rotate(90deg);
+      transform-origin: top center;
+  }
+  75%{
+    transform: rotate(0deg);
+    transform-origin: top center;
+}
+100%{
+    transform: rotate(90deg);
+    transform-origin: top center;
+}
+}
+
+#main:hover .leg1{
+    animation: l1 1s infinite linear;
+}
+@keyframes l1{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+#main:hover .leg2{
+    animation: l2 1s infinite linear;
+}
+@keyframes l2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(-15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+.face:hover{
+    animation: head1 2s infinite;
+}@keyframes head1{
+    0%{
+        width: 100px;
+    }
+    25%{
+        width: 110px;
+    }
+    50%{
+        width: 100px;
+    }
+    75%{
+        width: 110px;
+    }
+    100%{
+        width: 100px;
+    }
+}
